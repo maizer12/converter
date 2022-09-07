@@ -1,0 +1,70 @@
+.converter {
+	border: 1px solid black;
+	padding: 15px;
+	max-width: 600px;
+	margin: 50px auto 0;
+	box-shadow: 0 0 10px black;
+	background-color: rgb(253, 240, 255);
+	&__title {
+		text-align: center;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+	&__name {
+		font-weight: 600;
+		margin-right: -80px;
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	&__item {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__select {
+		padding: 10px;
+		cursor: pointer;
+	}
+	&__input {
+		border: 1px solid black;
+		padding: 10px 7px 10px 10px;
+		width: 100px;
+		overflow: hidden;
+		&::placeholder {
+			transition: 0.7s;
+		}
+		&:focus {
+			&::placeholder {
+				transform: translateY(-1000px);
+			}
+		}
+	}
+	&__number {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 14px;
+	}
+	&__change {
+		width: 40px;
+		margin: 0px auto;
+		cursor: pointer;
+		img {
+			transition: 0.7s;
+			&:hover {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&__btn {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+	}
+}

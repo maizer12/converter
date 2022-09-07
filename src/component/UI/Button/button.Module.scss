@@ -1,0 +1,34 @@
+.button {
+		background-color: red;
+		color: #fff;
+		padding: 10px 20px;
+		position: relative;
+		border: 1px solid black;
+		overflow: hidden;
+		&::before {
+			content: '';
+			top: 0px;
+			right: -400px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #fff;
+			transition: 0.7s;
+		}
+		p {
+			position: relative;
+			z-index: 10;
+			transition: 0.7s;
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 1.3;
+		}
+		&:hover {
+			&::before {
+				right: 0;
+			}
+			p {
+				color: black;
+			}
+		}
+	}
